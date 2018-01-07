@@ -1,0 +1,55 @@
+{
+  "name": "react-time-tracker",
+  "version": "1.0.0",
+  "description": "Gives time spent by user in a session",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "babel ./src --ignore=*.spec.js --out-dir ./lib --presets es2015,react,stage-2",
+    "test": "mocha --reporter spec \"src/test/testSetup.js\" \"src/test/*.spec.js\"",
+    "build:webpack": "webpack",
+    "dev:hot": "webpack-dev-server --hot --inline --progress --colors --watch --display-error-details --display-cached --content-base ./src/test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chayanbhaisare/react-time-tracker"
+  },
+  "keywords": [
+    "Apache Cordova",
+    "React",
+    "Time Tracker",
+    "Time",
+    "Tracker"
+  ],
+  "author": "Chayan Bhaisare",
+  "license": "ISC",
+  "files": [
+    "lib/index.js"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-add-module-exports": "^0.1.2",
+    "babel-plugin-react-html-attrs": "^2.0.0",
+    "babel-plugin-transform-class-properties": "^6.3.13",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-0": "^6.3.13",
+    "babel-preset-stage-2": "^6.13.0",
+    "chai": "^4.1.2",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jsdom": "^9.11.0",
+    "mocha": "^4.1.0",
+    "react": "^16.2.0",
+    "react-addons-test-utils": "^15.6.2",
+    "react-dom": "^16.2.0",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {}
+}
